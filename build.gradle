@@ -3,9 +3,12 @@ buildscript {
         jcenter()
         google()
         mavenCentral()
+        maven {
+            url "https://maven.scijava.org/content/repositories/public/"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:7.0.0'
         classpath 'com.novoda:bintray-release:0.9.1'
     }
 }
