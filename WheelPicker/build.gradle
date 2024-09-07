@@ -18,19 +18,18 @@ android {
     }
     sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
 }
-afterEvaluate{
-    publishing{
+
+publishing{
         publications{
             release(MavenPublication){
                 from components.release
-
                 groupId='com.github.bdkha23'
                 artifactId = 'WheelPicker'
                 version = '1.0.2'
             }
         }
     }
-}
+    
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.2'
 }
